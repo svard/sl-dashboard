@@ -1,0 +1,43 @@
+html {
+  --black: #1F2D3D;
+  --light-black: #324057;
+  --extra-light-black: #475669;
+  --silver: #8492A6;
+  --light-silver: #99A9BF;
+  --extra-light-silver: #C0CCDA;
+  --grey: #D3DCE6;
+  --light-grey: #E5E9F2;
+  --extra-light-grey: #EFF2F7;
+  --white: #FFFFFF;
+  --dark-white: #F9FAFC;
+  box-sizing: border-box;
+}
+
+body {
+  color: var(--black);
+  font-family: 'Lato', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.text {
+  font-size: 1.2rem;
+  line-height: 2rem;
+  color: #333333;
+}
+
+.container {
+  width: 100%;
+  padding: 0 20px;
+}
+
+@media (min-width: 961px) {
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}

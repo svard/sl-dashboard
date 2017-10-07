@@ -1,0 +1,8 @@
+{:http {:port #immuconf/default "8080"}
+ :mongodb {:host #immuconf/override "Mongodb host IP"
+           :port #immuconf/default 27017
+           :dbname #immuconf/default "sl-dashboard"}
+ :sl-api {:departures {:url #immuconf/default "http://api.sl.se/api2/realtimedeparturesV4.json"
+                       :key #immuconf/override "SL Realtidsinformation 4 key"}
+          :typeahead {:url #immuconf/default "http://api.sl.se/api2/typeahead.json"
+                      :key #immuconf/override "SL Platsuppslag key"}}}
