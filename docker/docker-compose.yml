@@ -27,6 +27,6 @@ services:
       HTTP_PORT: 8087
 
   frontend:
-    image: svard/sl-dashboard:frontend-1.0.1
+    image: svard/sl-dashboard:frontend-1.0.2
     ports:
       - "8088:80"

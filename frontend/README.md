@@ -1,6 +1,6 @@
-# sl-dashboard
+# SL Dashboard Frontend
 
-> A SL comuter dashboard
+> A Vue.js frontend for the SL dashboard.
 
 ## Build Setup
 
@@ -19,12 +19,6 @@ npm run build --report
 
 # run unit tests
 npm run unit
-
-# run e2e tests
-npm run e2e
-
-# run all tests
-npm test
 ```
 
 For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).

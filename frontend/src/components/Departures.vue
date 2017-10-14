@@ -1,11 +1,11 @@
 <template>
   <div>
      <div class="departure__row" v-for="transport in transports" :key="transport.journeynumber"> 
-      <div>
+      <div class="departure__row-left">
         <span class="departure__line">{{transport.linenumber}}</span>
-        <span>{{transport.destination}}</span>
+        <span class="departure__destination" :title="transport.destination">{{transport.destination}}</span>
       </div>
-      <div>{{transport.displaytime}}</div>
+      <div class="departure__row-right">{{transport.displaytime}}</div>
     </div>
   </div>
 </template>
@@ -32,6 +32,18 @@
 
     &__line {
       margin-right: 0.2em;
+    }
+
+    &__row-left {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      min-width: 200px;
+    }
+
+    &__row-right {
+      min-width: 100px;
+      margin-left: 0.2em;
     }
   }
 </style>

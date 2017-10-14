@@ -1,6 +1,6 @@
 (defproject sl-dashboard "1.0.2-SNAPSHOT"
   :description "A SL comuter dashboard"
-  :url "http://example.com/FIXME"
+  :url "https://github.com/svard/sl-dashboard"
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
   :main net.svard.sl-dashboard.core
@@ -28,6 +28,7 @@
   :docker {:image-name "svard/sl-dashboard"}
   :release-tasks [["change" "version" "leiningen.release/bump-version" "release"]
                   ["clean"]
+                  ["test"]
                   ["uberjar"]
                   ["docker" "build"]
                   ["change" "version" "leiningen.release/bump-version"]])
